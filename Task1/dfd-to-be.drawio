@@ -1,0 +1,292 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6" pages="6">
+  <diagram id="t1" name="1 Запись">
+    <mxGraphModel dx="1410" dy="825" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="P" value="Пациент" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="40" y="140" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Portal" value="Портал /&#xa;Ресепшен" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="220" y="135" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CRM" value="CRM пациенты" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="420" y="40" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="AUD" value="Audit" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="420" y="140" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="Doc" value="Врач&#xa;(уведомление)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="420" y="230" width="110" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" style="html=1;endArrow=block;endFill=1;" parent="1" source="P" target="Portal" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1l" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 13px; background-color: rgb(236, 236, 236);&quot;&gt;encrypt :TLS&lt;/span&gt;" style="edgeLabel;html=1;fontSize=10;fontStyle=1;fontColor=#b85450;" parent="e1" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-45" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" style="html=1;endArrow=block;endFill=1;" parent="1" source="Portal" target="CRM" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2l" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 13px; background-color: rgb(236, 236, 236);&quot;&gt;encrypt&amp;nbsp;&lt;/span&gt;" style="edgeLabel;html=1;fontSize=10;fontStyle=1;fontColor=#b85450;" parent="e2" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" style="html=1;endArrow=block;endFill=1;" parent="1" source="Portal" target="AUD" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3l" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 13px; background-color: rgb(236, 236, 236);&quot;&gt;ineage/audit&lt;/span&gt;" style="edgeLabel;html=1;fontSize=10;fontStyle=1;fontColor=#b85450;" parent="e3" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WgofaadYse956eU4x3EW-1" value="Text" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="e3">
+          <mxGeometry x="0.3544" y="-4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" style="html=1;endArrow=block;endFill=1;" parent="1" source="Portal" target="Doc" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4l" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-size: 13px; background-color: rgb(236, 236, 236);&quot;&gt;mask&amp;nbsp;&lt;/span&gt;" style="edgeLabel;html=1;fontSize=10;fontStyle=1;fontColor=#b85450;" parent="e4" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="t2" name="2 Приём медкарта">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t" value="DFD To-Be — 2. Приём / медкарта" style="text;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="20" y="15" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Doc" value="Врач" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EMR" value="EMR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="220" y="120" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Store" value="Медхранилище&#xa;(encrypted)" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="420" y="50" width="140" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="AUD" value="Audit" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="420" y="160" width="140" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="Doc" target="EMR">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a1l" value="R: ABAC" style="edgeLabel;html=1;fontSize=10;fontStyle=1;fontColor=#b85450;" vertex="1" connectable="0" parent="a1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a2" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="EMR" target="Store">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a2l" value="E KMS T special" style="edgeLabel;html=1;fontSize=10;fontStyle=1;fontColor=#b85450;" vertex="1" connectable="0" parent="a2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a3" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="EMR" target="AUD">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a3l" value="L: who viewed" style="edgeLabel;html=1;fontSize=10;fontStyle=1;fontColor=#b85450;" vertex="1" connectable="0" parent="a3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="t3" name="3 Оплата">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t" value="DFD To-Be — 3. Оплата" style="text;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="20" y="15" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P" value="Пациент" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Pay" value="Платёжный&#xa;шлюз" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="220" y="115" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Fin" value="1С / Billing" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="420" y="50" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="LOG" value="Logs" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="420" y="160" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="P" target="Pay">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b1l" value="E: TLS" style="edgeLabel;html=1;fontSize=10;fontStyle=1;fontColor=#b85450;" vertex="1" connectable="0" parent="b1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b2" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="Pay" target="Fin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b2l" value="E: status" style="edgeLabel;html=1;fontSize=10;fontStyle=1;fontColor=#b85450;" vertex="1" connectable="0" parent="b2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b3" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="Pay" target="LOG">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b3l" value="M: DLP" style="edgeLabel;html=1;fontSize=10;fontStyle=1;fontColor=#b85450;" vertex="1" connectable="0" parent="b3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="t4" name="4 Склад">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t" value="DFD To-Be — 4. Склад" style="text;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="20" y="15" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="W" value="Склад" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="WMS" value="Складской&#xa;сервис" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="220" y="95" width="120" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="Fin" value="Финансы" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="420" y="100" width="120" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="W" target="WMS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c1l" value="R" style="edgeLabel;html=1;fontSize=10;fontStyle=1;fontColor=#b85450;" vertex="1" connectable="0" parent="c1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c2" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="WMS" target="Fin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="t5" name="5 Анализы">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t" value="DFD To-Be — 5. Анализы" style="text;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="20" y="15" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EMR" value="EMR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Lab" value="Lab API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="220" y="80" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Store" value="Медхранилище" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="420" y="80" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="P" value="Пациент" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="App" value="ЛК / App" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="220" y="200" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="EMR" target="Lab">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d1l" value="E API T special" style="edgeLabel;html=1;fontSize=10;fontStyle=1;fontColor=#b85450;" vertex="1" connectable="0" parent="d1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d2" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="Lab" target="Store">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d2l" value="E: результат" style="edgeLabel;html=1;fontSize=10;fontStyle=1;fontColor=#b85450;" vertex="1" connectable="0" parent="d2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d3" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="P" target="App">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d3l" value="R: только свои" style="edgeLabel;html=1;fontSize=10;fontStyle=1;fontColor=#b85450;" vertex="1" connectable="0" parent="d3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d4" style="html=1;endArrow=block;endFill=1;dashed=1;" edge="1" parent="1" source="App" target="Store">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="270" y="160" />
+              <mxPoint x="485" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="t6" name="6 Аналитика">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="450" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t" value="DFD To-Be — 6. Аналитика (A = обезличивание)" style="text;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="20" y="15" width="420" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Store" value="ПДн / special" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ETL" value="ETL" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="240" y="120" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ANON" value="Anonymizer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="400" y="120" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="DWH" value="DWH / BI" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="580" y="120" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="f1" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="Store" target="ETL">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f1l" value="T: export" style="edgeLabel;html=1;fontSize=10;fontStyle=1;fontColor=#b85450;" vertex="1" connectable="0" parent="f1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f2" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="ETL" target="ANON">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f2l" value="A" style="edgeLabel;html=1;fontSize=10;fontStyle=1;fontColor=#b85450;" vertex="1" connectable="0" parent="f2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f3" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="ANON" target="DWH">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f3l" value="A + L lineage" style="edgeLabel;html=1;fontSize=10;fontStyle=1;fontColor=#b85450;" vertex="1" connectable="0" parent="f3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

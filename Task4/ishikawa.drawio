@@ -1,0 +1,109 @@
+<mxfile host="app.diagrams.net" modified="2026-10-29T00:00:00.000Z" agent="Cursor" version="22.0.0">
+  <diagram id="ishikawa" name="Ishikawa migration bottlenecks">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="effect" value="Узкие места&#xa;миграции&#xa;(производительность&#xa;/ готовность)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="1280" y="380" width="160" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="spine" value="" style="endArrow=classic;html=1;strokeWidth=3" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="425" as="sourcePoint"/>
+            <mxPoint x="1280" y="425" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c1" value="Инфраструктура" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="200" y="80" width="140" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="c2" value="ПО / данные" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="450" y="80" width="140" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="c3" value="Интеграция" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="720" y="80" width="140" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="c4" value="Персонал" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="200" y="700" width="140" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="c5" value="Процессы" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="450" y="700" width="140" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="c6" value="Безопасность" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="720" y="700" width="140" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="b1" value="" style="endArrow=none;html=1;strokeWidth=2" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="270" y="120" as="sourcePoint"/><mxPoint x="400" y="425" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="b2" value="" style="endArrow=none;html=1;strokeWidth=2" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="520" y="120" as="sourcePoint"/><mxPoint x="650" y="425" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="b3" value="" style="endArrow=none;html=1;strokeWidth=2" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="790" y="120" as="sourcePoint"/><mxPoint x="920" y="425" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="b4" value="" style="endArrow=none;html=1;strokeWidth=2" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="270" y="700" as="sourcePoint"/><mxPoint x="400" y="425" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="b5" value="" style="endArrow=none;html=1;strokeWidth=2" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="520" y="700" as="sourcePoint"/><mxPoint x="650" y="425" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="b6" value="" style="endArrow=none;html=1;strokeWidth=2" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry"><mxPoint x="790" y="700" as="sourcePoint"/><mxPoint x="920" y="425" as="targetPoint"/></mxGeometry>
+        </mxCell>
+        <mxCell id="i11" value="1 сервер on-prem&#xa;без запаса CPU/IO" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="120" y="160" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="i12" value="Сеть офиса =&#xa;трафик филиалов" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="120" y="220" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="i13" value="Нет HA / бэкап&#xa;на том же диске" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="120" y="280" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="i21" value="Excel/сканы →&#xa;хаос качества данных" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="380" y="160" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="i22" value="1С файловый режим&#xa;не тянет ×5 нагрузку" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="380" y="220" width="170" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="i23" value="Дубли Excel+1С&#xa;конфликты при ETL" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="380" y="280" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="i31" value="ККМ OLE / TCP&#xa;хрупкая связка" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="660" y="160" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="i32" value="Lab API без&#xa;контрактов/лимитов" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="660" y="220" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="i33" value="Синхронные вызовы&#xa;портал↔EHR↔pay" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="660" y="280" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="i41" value="IT: 3 человека&#xa;на всю миграцию" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="120" y="520" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="i42" value="Врачи/ресепшен&#xa;не обучены UI" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="120" y="580" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="i43" value="Ручной dual-run&#xa;увеличивает ошибки" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="120" y="640" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="i51" value="Нет cutover-плана&#xa;и rollback" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="380" y="520" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="i52" value="Big-bang вместо&#xa;поэтапной миграции" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="380" y="580" width="160" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="i53" value="Нет нагрузочных&#xa;тестов ×5" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="380" y="640" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="i61" value="Шифрование без&#xa;оценки latency" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="660" y="520" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="i62" value="Audit на каждый&#xa;read → I/O spike" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="660" y="580" width="150" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="i63" value="Жёсткий ABAC&#xa;ломает batch ETL" style="text;html=1;strokeColor=none;fillColor=none;align=left;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="660" y="640" width="150" height="40" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

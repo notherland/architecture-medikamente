@@ -1,0 +1,207 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6">
+  <diagram id="c4" name="C4 Context To-Be MVP">
+    <mxGraphModel dx="1410" dy="825" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="patient" value="&amp;nbsp;Пациент&lt;br&gt;ЛК / запись" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="80" y="200" width="40" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="reception" value="&amp;nbsp;Ресепшен&lt;br&gt;слоты, напоминания" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="360" width="40" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MvgUN8MLwocsqNYSQprn-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="doctor" target="cashier">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="doctor" value="&amp;nbsp;Врач&lt;br&gt;приём, медкарта" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="520" width="40" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cashier" value="&amp;nbsp;Кассир&lt;br&gt;оплата" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="80" y="660" width="40" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="MvgUN8MLwocsqNYSQprn-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="analyst" target="MvgUN8MLwocsqNYSQprn-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="analyst" value="&amp;nbsp;Аналитик&lt;br&gt;BI без ПДн" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1280" y="200" width="40" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" value="IT / SecOps&lt;br&gt;ключи, аудит" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1280" y="520" width="40" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="boundary" value="Медикаменте Platform" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=none;strokeColor=#1a1a1a;strokeWidth=2;fontStyle=1;fontSize=14;align=left;spacingLeft=10;spacingTop=5;" parent="1" vertex="1">
+          <mxGeometry x="280" y="100" width="880" height="720" as="geometry" />
+        </mxCell>
+        <mxCell id="portal" value="Client &amp; Staff Portal&#xa;запись, ЛК, роли" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="340" y="200" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="privacy" value="Privacy Control Plane&#xa;теги, RBAC/ABAC,&#xa;consent, audit, DLP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="600" y="180" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="core" value="Clinical &amp; Billing&#xa;appointments, EHR, payments" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="340" y="380" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="analytics" value="Privacy-preserving Analytics&#xa;anonymizer → lake → BI/ML" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="600" y="380" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="lab" value="Лаборатория&#xa;API результатов" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="340" y="560" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="acq" value="Эквайер / ККМ&#xa;платежи" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="540" y="560" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="notify" value="SMS / Push / Voice&#xa;напоминания" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="720" y="560" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ad" value="IdP (AD/OIDC)&#xa;аутентификация" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="920" y="560" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="extNote" value="внешние системы" style="text;html=1;fontSize=11;fontColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="340" y="630" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="r1" style="html=1;endArrow=block;endFill=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" parent="1" source="patient" target="portal" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r1l" value="HTTPS, свои данные" style="edgeLabel;html=1;fontSize=9;" parent="r1" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r2" style="html=1;endArrow=block;endFill=1;" parent="1" source="reception" target="portal" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="400" />
+              <mxPoint x="200" y="235" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r2l" value="HTTPS+RBAC" style="edgeLabel;html=1;fontSize=9;" parent="r2" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r3" style="html=1;endArrow=block;endFill=1;" parent="1" source="doctor" target="portal" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="560" />
+              <mxPoint x="220" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r3l" value="ABAC на карты" style="edgeLabel;html=1;fontSize=9;" parent="r3" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r4" style="html=1;endArrow=block;endFill=1;" parent="1" source="cashier" target="portal" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="685" />
+              <mxPoint x="240" y="255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r4l" value="платежи" style="edgeLabel;html=1;fontSize=9;" parent="r4" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r5" style="html=1;endArrow=block;endFill=1;" parent="1" source="portal" target="privacy" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r5l" value="authorize, tag, audit" style="edgeLabel;html=1;fontSize=9;" parent="r5" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r6" style="html=1;endArrow=block;endFill=1;" parent="1" source="portal" target="core" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r6l" value="use cases" style="edgeLabel;html=1;fontSize=9;" parent="r6" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r7" style="html=1;endArrow=block;endFill=1;" parent="1" source="core" target="privacy" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r7l" value="enforce tags / encrypt" style="edgeLabel;html=1;fontSize=9;" parent="r7" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r8" style="html=1;endArrow=block;endFill=1;" parent="1" source="core" target="analytics" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r8l" value="ETL через anonymizer" style="edgeLabel;html=1;fontSize=9;" parent="r8" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r9" style="html=1;endArrow=block;endFill=1;" parent="1" source="core" target="lab" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r9l" value="min API" style="edgeLabel;html=1;fontSize=9;" parent="r9" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r10" style="html=1;endArrow=block;endFill=1;" parent="1" source="core" target="acq" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r10l" value="токены" style="edgeLabel;html=1;fontSize=9;" parent="r10" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r11" style="html=1;endArrow=block;endFill=1;" parent="1" source="portal" target="notify" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="320" />
+              <mxPoint x="795" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r12" style="html=1;endArrow=block;endFill=1;" parent="1" source="portal" target="ad" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="520" y="300" />
+              <mxPoint x="990" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r12l" value="login" style="edgeLabel;html=1;fontSize=9;" parent="r12" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r13" style="html=1;endArrow=block;endFill=1;" parent="1" source="analyst" target="analytics" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r13l" value="витрины без ПДн" style="edgeLabel;html=1;fontSize=9;" parent="r13" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r14" style="html=1;endArrow=block;endFill=1;" parent="1" source="admin" target="privacy" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1200" y="560" />
+              <mxPoint x="1200" y="225" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="r14l" value="политики, KMS, алерты" style="edgeLabel;html=1;fontSize=9;" parent="r14" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MvgUN8MLwocsqNYSQprn-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MvgUN8MLwocsqNYSQprn-1" target="admin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MvgUN8MLwocsqNYSQprn-1" value="&amp;nbsp;Аналитик&lt;br&gt;BI без ПДн" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="362" width="40" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

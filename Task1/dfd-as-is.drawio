@@ -1,0 +1,326 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36" version="28.0.6" pages="6">
+  <diagram id="p1" name="1 Запись и регистрация">
+    <mxGraphModel dx="1410" dy="825" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="P" value="Пациент" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="40" y="120" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="R" value="Ресепшен&#xa;(процесс)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="240" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="X1" value="Excel журнал" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="460" y="40" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FS" value="Общий диск" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="460" y="120" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="EX" value="Exchange" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="460" y="200" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" parent="1" source="P" target="R" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1l" value="ФИО, телефон, email, ДР" style="edgeLabel;html=1;align=center;fontSize=10;" parent="e1" vertex="1" connectable="0">
+          <mxGeometry x="-0.1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" parent="1" source="R" target="X1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2l" value="строка журнала" style="edgeLabel;html=1;fontSize=10;" parent="e2" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" parent="1" source="R" target="FS" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3l" value="анкета PDF/Excel" style="edgeLabel;html=1;fontSize=10;" parent="e3" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;endFill=1;" parent="1" source="R" target="EX" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4l" value="письмо" style="edgeLabel;html=1;fontSize=10;" parent="e4" vertex="1" connectable="0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="p2" name="2 Приём и медкарта">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t" value="DFD As-Is — 2. Приём и медкарта" style="text;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="D" value="Врач" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="140" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="X1" value="Excel журнал" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="220" y="40" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MC" value="Медкарта&#xa;Excel/скан" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="220" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FS" value="Общий диск" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="420" y="140" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="D" target="X1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a1l" value="чтение записи" style="edgeLabel;html=1;fontSize=10;" vertex="1" connectable="0" parent="a1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a2" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="D" target="MC">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a2l" value="диагноз, назначения" style="edgeLabel;html=1;fontSize=10;" vertex="1" connectable="0" parent="a2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a3" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="MC" target="FS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" style="html=1;endArrow=block;endFill=1;exitX=0.5;exitY=1;entryX=0;entryY=0.75;" edge="1" parent="1" source="D" target="FS">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="90" y="260" />
+              <mxPoint x="420" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a4l" value="файл карты" style="edgeLabel;html=1;fontSize=10;" vertex="1" connectable="0" parent="a4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="p3" name="3 Оплата">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t" value="DFD As-Is — 3. Оплата" style="text;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="P" value="Пациент" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="140" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="K" value="Кассир" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="200" y="140" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KKM" value="ККМ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="360" y="140" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Srv" value="Windows Server / 1С" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="520" y="140" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="X2" value="Excel платежи" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="200" y="260" width="120" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="BP" value="1С:Бухгалтерия" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="520" y="260" width="130" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="b1" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="P" target="K">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b1l" value="оплата" style="edgeLabel;html=1;fontSize=10;" vertex="1" connectable="0" parent="b1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b2" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="K" target="KKM">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b2l" value="чек" style="edgeLabel;html=1;fontSize=10;" vertex="1" connectable="0" parent="b2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b3" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="KKM" target="Srv">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b3l" value="OLE/TCP" style="edgeLabel;html=1;fontSize=10;" vertex="1" connectable="0" parent="b3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b4" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="K" target="X2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="b4l" value="дубль Excel" style="edgeLabel;html=1;fontSize=10;" vertex="1" connectable="0" parent="b4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b5" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="Srv" target="BP">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="p4" name="4 Склад ТМЦ">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t" value="DFD As-Is — 4. Склад ТМЦ" style="text;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="W" value="Склад" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="TS" value="1С:Торговля и склад" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="220" y="120" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BP" value="1С:Бухгалтерия" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="440" y="120" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="W" target="TS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c1l" value="приход/расход" style="edgeLabel;html=1;fontSize=10;" vertex="1" connectable="0" parent="c1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c2" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="TS" target="BP">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c2l" value="обмен" style="edgeLabel;html=1;fontSize=10;" vertex="1" connectable="0" parent="c2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="p5" name="5 Анализы">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t" value="DFD As-Is — 5. Анализы" style="text;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="D" value="Врач" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Lab" value="Лаборатория&#xa;(вручную)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="220" y="100" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FS" value="Общий диск" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="420" y="100" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="P" value="Пациент" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="420" y="220" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="d1" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="D" target="Lab">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d1l" value="направление" style="edgeLabel;html=1;fontSize=10;" vertex="1" connectable="0" parent="d1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d2" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="Lab" target="FS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d2l" value="результат скан/PDF" style="edgeLabel;html=1;fontSize=10;" vertex="1" connectable="0" parent="d2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d3" style="html=1;endArrow=block;endFill=1;dashed=1;" edge="1" parent="1" source="D" target="FS">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="85" y="60" />
+              <mxPoint x="480" y="60" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d3l" value="читает файл" style="edgeLabel;html=1;fontSize=10;" vertex="1" connectable="0" parent="d3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="d4" style="html=1;endArrow=block;endFill=1;dashed=1;" edge="1" parent="1" source="P" target="FS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="d4l" value="нет ЛК" style="edgeLabel;html=1;fontSize=10;" vertex="1" connectable="0" parent="d4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="p6" name="6 Отчёты аналитика">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t" value="DFD As-Is — 6. Отчёты / аналитика" style="text;html=1;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="X1" value="Excel журналы" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="120" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="MC" value="Медкарты" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="40" y="150" width="120" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="X2" value="Excel платежи" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="40" y="220" width="120" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="BA" value="Бизнес-аналитик" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="260" y="140" width="130" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="Rpt" value="Отчёты P&amp;L, ABC" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f5f5f5;" vertex="1" parent="1">
+          <mxGeometry x="480" y="80" width="140" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="PC" value="Локальный диск&#xa;аналитика" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="480" y="180" width="140" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="f1" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="X1" target="BA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f2" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="MC" target="BA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f3" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="X2" target="BA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f4" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="BA" target="Rpt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f4l" value="Jupyter/Python" style="edgeLabel;html=1;fontSize=10;" vertex="1" connectable="0" parent="f4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="f5" style="html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="BA" target="PC">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f5l" value="копии на ПК" style="edgeLabel;html=1;fontSize=10;" vertex="1" connectable="0" parent="f5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
